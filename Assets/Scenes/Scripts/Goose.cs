@@ -7,6 +7,8 @@ public class Goose : MonoBehaviour
     public Transform target;
     public float range = 15f;
     public string enemyTag = "Enemy";
+    public Transform rotate;
+    public float turnSpeed= 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +32,10 @@ public class Goose : MonoBehaviour
         if (near != null && shortest <= range) {
             target = near.transform;
         }
+        else
+        {
+            target = null;
+        }
     }
 
 
@@ -39,6 +45,10 @@ public class Goose : MonoBehaviour
         if (target == null)
             return;
 
+        Vector3 diretions = target.position - transform.position;
+        Quaternion lookrotation = Quaternion.LookRotation(diretions);
+        Vector3 rotation = Quaternion.Lerp(rotate.rotation,lookrotation, Time.deltaTime * turnSpeed).eulerAngles;
+        rotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 
     void OnDrawGizmosSelected()
