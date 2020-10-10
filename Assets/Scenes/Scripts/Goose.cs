@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class Goose : MonoBehaviour
 {
-    public Transform target;
+    private Transform target;
+
+    [Header("Caratteristiche")]
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
     public float range = 15f;
+
+    [Header("Setup")]
     public string enemyTag = "Enemy";
     public Transform rotate;
     public float turnSpeed= 10f;
+
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +59,22 @@ public class Goose : MonoBehaviour
         Quaternion lookrotation = Quaternion.LookRotation(diretions);
         Vector3 rotation = Quaternion.Lerp(rotate.rotation,lookrotation, Time.deltaTime * turnSpeed).eulerAngles;
         rotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
+
+        if (fireCountdown <= 0f) {
+            Shoot();
+            fireCountdown = 1f/fireRate;
+        }
+        fireCountdown -= Time.deltaTime;
+    }
+
+    void Shoot() {
+        GameObject bulletGO= (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletGO.GetComponent<Bullet>();
+        if (bullet != null) {
+            bullet.Search(target);
+        }
+
+    
     }
 
     void OnDrawGizmosSelected()
