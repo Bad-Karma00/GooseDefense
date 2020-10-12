@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd09666a58ba924cb2753be8d8118bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurretPrefab: {fileID: 919132149155446097, guid: 5af0420a282ae164794d57473bef0f80,
+  standardTurretPrefab: {fileID: 4607450300016917513, guid: 5c2304985b58a85459c3d46aa13fd0f6,
     type: 3}
 --- !u!4 &662654858 stripped
 Transform:
