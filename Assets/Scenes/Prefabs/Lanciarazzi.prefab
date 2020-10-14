@@ -1,26 +1,26 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4607450299964947066
+--- !u!114 &4551564804617967466
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3688899388867888936}
+  m_GameObject: {fileID: 3741085852279876152}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9a3e843bc00b0e43ad1cf1f7bfebbbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 1
-  range: 10
+  fireRate: 0.5
+  range: 20
   enemyTag: Enemy
-  rotate: {fileID: 4607450300016917512}
+  rotate: {fileID: 4551564804527460632}
   turnSpeed: 10
-  bulletPrefab: {fileID: 8107912190112770863, guid: dcb75982c3fa89840a058a0d2301d097,
+  bulletPrefab: {fileID: 8301660480044207167, guid: 0e7d24cb784935f429e60b1b36ce00bd,
     type: 3}
-  firePoint: {fileID: 4607450299285726715}
---- !u!1 &4607450299285726712
+  firePoint: {fileID: 4551564805029267691}
+--- !u!1 &4551564804527460633
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28,7 +28,38 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4607450299285726715}
+  - component: {fileID: 4551564804527460632}
+  m_Layer: 0
+  m_Name: Lanciarazzi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4551564804527460632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4551564804527460633}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -30.973833, y: 49.029697, z: -40.359276}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4080491534549643394}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1 &4551564805029267688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4551564805029267691}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -36,57 +67,26 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4607450299285726715
+--- !u!4 &4551564805029267691
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4607450299285726712}
+  m_GameObject: {fileID: 4551564805029267688}
   m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: -0.049405526, y: -0.41506195, z: 1.6440773}
   m_LocalScale: {x: 0.49999994, y: 0.49999982, z: 0.49999988}
   m_Children: []
-  m_Father: {fileID: 4069647537321024914}
+  m_Father: {fileID: 4080491534549643394}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!1 &4607450300016917513
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4607450300016917512}
-  m_Layer: 0
-  m_Name: GooseFinale
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4607450300016917512
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4607450300016917513}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 13.22, y: 49.029697, z: -78.51}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4069647537321024914}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!1001 &4607450299964947065
+--- !u!1001 &4551564804617967465
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 4607450300016917512}
+    m_TransformParent: {fileID: 4551564804527460632}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5af0420a282ae164794d57473bef0f80,
         type: 3}
@@ -158,6 +158,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 5af0420a282ae164794d57473bef0f80,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: beafc564f61da3e46891dacc74e12a49, type: 2}
     - target: {fileID: 919132149155446097, guid: 5af0420a282ae164794d57473bef0f80,
         type: 3}
       propertyPath: m_Name
@@ -165,15 +170,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af0420a282ae164794d57473bef0f80, type: 3}
---- !u!1 &3688899388867888936 stripped
+--- !u!1 &3741085852279876152 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5af0420a282ae164794d57473bef0f80,
     type: 3}
-  m_PrefabInstance: {fileID: 4607450299964947065}
+  m_PrefabInstance: {fileID: 4551564804617967465}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &4069647537321024914 stripped
+--- !u!4 &4080491534549643394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5af0420a282ae164794d57473bef0f80,
     type: 3}
-  m_PrefabInstance: {fileID: 4607450299964947065}
+  m_PrefabInstance: {fileID: 4551564804617967465}
   m_PrefabAsset: {fileID: 0}
