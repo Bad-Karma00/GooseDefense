@@ -6,17 +6,24 @@ public class Goose : MonoBehaviour
 {
     private Transform target;
 
-    [Header("Caratteristiche")]
+    [Header("Generali")]
     public float fireRate = 1f;
+    [Header("Bullet Goose")]
     private float fireCountdown = 0f;
     public float range = 15f;
+    public GameObject bulletPrefab;
 
+    [Header("Laser Goose")]
+    public bool useLaser= false;
+    public int damageOver = 30;
+    public LineRenderer lineRenderer;
+    public ParticleSystem impactEffect;
+    public Light impactLight;
     [Header("Setup")]
     public string enemyTag = "Enemy";
     public Transform rotate;
     public float turnSpeed= 10f;
 
-    public GameObject bulletPrefab;
     public Transform firePoint;
    
 
@@ -53,19 +60,31 @@ public class Goose : MonoBehaviour
     void Update()
     {
         if (target == null)
+        {
+            if (useLaser) {
+                if (lineRenderer.enabled) {
+                    lineRenderer.enabled = false;
+                    impactEffect.Stop();
+                    impactLight.enabled = false;
+                }
+            }
             return;
-
-        Vector3 diretions = target.position - transform.position;
-        Quaternion lookrotation = Quaternion.LookRotation(diretions);
-        Vector3 rotation = Quaternion.Lerp(rotate.rotation,lookrotation, Time.deltaTime * turnSpeed).eulerAngles;
-        rotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-
-        if (fireCountdown <= 0f) {
-            Shoot();
-            fireCountdown = 1f/fireRate;
         }
-        fireCountdown -= Time.deltaTime;
+        LockOnTarget();
+        if (useLaser)
+        {
+            Laser();
+        }
+        else {
+            if (fireCountdown <= 0f)
+            {
+                Shoot();
+                fireCountdown = 1f / fireRate;
+            }
+            fireCountdown -= Time.deltaTime;
+        }
     }
+
 
     void Shoot() {
         GameObject bulletGO= (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
@@ -77,9 +96,31 @@ public class Goose : MonoBehaviour
     
     }
 
+    void Laser()
+    {
+        if (!lineRenderer.enabled)
+        {
+            lineRenderer.enabled = true;
+            impactEffect.Play();
+            impactLight.enabled = true;
+        }
+        lineRenderer.SetPosition(0, firePoint.position);
+        lineRenderer.SetPosition(1, target.position);
+        Vector3 dir = firePoint.position - target.position;
+        impactEffect.transform.position = target.position + dir.normalized;
+        impactEffect.transform.rotation = Quaternion.LookRotation(dir);
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, range);
+    }
+
+    void LockOnTarget() {
+        Vector3 diretions = target.position - transform.position;
+        Quaternion lookrotation = Quaternion.LookRotation(diretions);
+        Vector3 rotation = Quaternion.Lerp(rotate.rotation, lookrotation, Time.deltaTime * turnSpeed).eulerAngles;
+        rotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
 }
