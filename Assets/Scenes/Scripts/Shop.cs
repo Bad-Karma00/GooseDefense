@@ -8,26 +8,31 @@ public class Shop : MonoBehaviour
     BuildManager buildManager;
     
 
+    public TurretBlueprint standardTurret;
+    public TurretBlueprint missleLauncher;
+    public TurretBlueprint laserTurret;
+
+
     private void Start()
     {
         buildManager = BuildManager.instance;
     }
-    public void PurchaseStandardTurret()
+    public void SelectStandardTurret()
     {
         Debug.Log("Oca con pistola selezionata");
-        buildManager.SetTurretToBuild(buildManager.standardTurretPrefab);
+        buildManager.SelectTurretToBuild(standardTurret);
     }
 
-    public void PurchaseRocketTurret()
+    public void SelectRocketTurret()
     {
         Debug.Log("Oca con lanciarazzi selezionata");
-        buildManager.SetTurretToBuild(buildManager.rocketTurretPrefab);
+        buildManager.SelectTurretToBuild(missleLauncher);
     }
 
-    public void PurchaseLaserTurret()
+    public void SelectLaserTurret()
     {
         Debug.Log("Oca laser selezionata");
-        buildManager.SetTurretToBuild(buildManager.laserTurretPrefab);
+        buildManager.SelectTurretToBuild(laserTurret);
     }
 
 }
