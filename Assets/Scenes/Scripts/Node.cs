@@ -8,10 +8,13 @@ public class Node : MonoBehaviour
     public Color hoverColor;
 
     public Vector3 positionOffset;
-   
+
+    public Color notEnoughMoneyColor;
+
     private CanvasGroup shop;
 
-    private GameObject turret;
+    [Header("Optional")]
+    public GameObject turret;
 
     private Renderer rend;
 
@@ -25,13 +28,18 @@ public class Node : MonoBehaviour
         buildManager = BuildManager.instance;
     }
 
+    public Vector3 GetBuildPosition()
+    {
+        return transform.position + positionOffset;
+    }
+
     private void OnMouseDown()
     {
 
         if (EventSystem.current.IsPointerOverGameObject())
             return;
         
-        if (buildManager.GetTurretToBuild() == null)
+        if (!buildManager.CanBuild)
         {
             return;
         }
@@ -41,10 +49,16 @@ public class Node : MonoBehaviour
             Debug.Log("Un oca è già qui!");
 
         }
-        if (buildManager.GetTurretToBuild() != null && turret == null) {
-            GameObject turretToBuild = buildManager.GetTurretToBuild();
-            turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
-            rend.material.color = hoverColor;
+        if (buildManager.CanBuild && turret == null) {
+            buildManager.BuildTurretOn(this);
+            if (buildManager.HasMoney)
+            {
+                rend.material.color = hoverColor;
+            }
+            else
+            {
+                rend.material.color = notEnoughMoneyColor;
+            }
         }
     }
     private void OnMouseExit()
