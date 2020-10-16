@@ -27,6 +27,7 @@ public class Shop : MonoBehaviour
     public void PurchaseLaserTurret()
     {
         Debug.Log("Oca laser selezionata");
+        buildManager.SetTurretToBuild(buildManager.laserTurretPrefab);
     }
 
 }
