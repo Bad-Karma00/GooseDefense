@@ -1,73 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2786604618834297093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2786604618834297094}
-  m_Layer: 0
-  m_Name: FirePoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2786604618834297094
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2786604618834297093}
-  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
-  m_LocalPosition: {x: -0.049405526, y: -0.41506195, z: 1.6440773}
-  m_LocalScale: {x: 0.49999994, y: 0.49999982, z: 0.49999988}
-  m_Children: []
-  m_Father: {fileID: 2388802665929095535}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
---- !u!1 &2786604619837724916
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2786604619837724917}
-  m_Layer: 0
-  m_Name: GooseLaser
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2786604619837724917
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2786604619837724916}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 13.3069935, y: 48.845844, z: -45.57}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2388802665929095535}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!120 &6062000213424764846
+--- !u!120 &3042641398941080232
 LineRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3057218412930786261}
+  m_GameObject: {fileID: 6085564699725024979}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -158,13 +97,13 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &2786604619781430919
+--- !u!114 &6392064775362802561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3057218412930786261}
+  m_GameObject: {fileID: 6085564699725024979}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a9a3e843bc00b0e43ad1cf1f7bfebbbb, type: 3}
@@ -175,21 +114,82 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8107912190112770863, guid: dcb75982c3fa89840a058a0d2301d097,
     type: 3}
   useLaser: 1
-  lineRenderer: {fileID: 6062000213424764846}
+  lineRenderer: {fileID: 3042641398941080232}
   impactEffect: {fileID: 7102589805821648908, guid: 32cd6c5658e6cf94da2d554e2087de84,
     type: 3}
   impactLight: {fileID: 4390475356324797150, guid: 49d47ba09aba5a94f85a9df67149e261,
     type: 3}
   enemyTag: Enemy
-  rotate: {fileID: 2786604619837724917}
+  rotate: {fileID: 6392064775309915635}
   turnSpeed: 10
-  firePoint: {fileID: 2786604618834297094}
---- !u!1001 &2786604619781430916
+  firePoint: {fileID: 6392064774952545280}
+--- !u!1 &6392064774952545283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6392064774952545280}
+  m_Layer: 0
+  m_Name: FirePoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6392064774952545280
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6392064774952545283}
+  m_LocalRotation: {x: 0.5, y: 0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: -0.049405526, y: -0.41506195, z: 1.6440773}
+  m_LocalScale: {x: 0.49999994, y: 0.49999982, z: 0.49999988}
+  m_Children: []
+  m_Father: {fileID: 6863367594120057961}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 90}
+--- !u!1 &6392064775309915634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6392064775309915635}
+  m_Layer: 0
+  m_Name: LaserGoose finale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6392064775309915635
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6392064775309915634}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 13.3069935, y: 48.845844, z: -45.57}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6863367594120057961}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!1001 &6392064775362802562
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 2786604619837724917}
+    m_TransformParent: {fileID: 6392064775309915635}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 5af0420a282ae164794d57473bef0f80,
         type: 3}
@@ -273,15 +273,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5af0420a282ae164794d57473bef0f80, type: 3}
---- !u!1 &3057218412930786261 stripped
+--- !u!1 &6085564699725024979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5af0420a282ae164794d57473bef0f80,
     type: 3}
-  m_PrefabInstance: {fileID: 2786604619781430916}
+  m_PrefabInstance: {fileID: 6392064775362802562}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &2388802665929095535 stripped
+--- !u!4 &6863367594120057961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5af0420a282ae164794d57473bef0f80,
     type: 3}
-  m_PrefabInstance: {fileID: 2786604619781430916}
+  m_PrefabInstance: {fileID: 6392064775362802562}
   m_PrefabAsset: {fileID: 0}
