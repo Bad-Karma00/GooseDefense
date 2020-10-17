@@ -24,6 +24,12 @@ public class CameraController : MonoBehaviour
                 Mathf.Clamp(transform.position.z, -43.0f, -43.0f));
         }
 
+        if (GameManager.gameIsOver)
+        {
+            this.enabled = false;
+            return;
+        }
+
     }
 
 }
