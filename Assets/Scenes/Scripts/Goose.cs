@@ -5,6 +5,7 @@ using UnityEngine;
 public class Goose : MonoBehaviour
 {
     private Transform target;
+    private Enemy targetEnemy;
 
     [Header("Generali")]
     public float fireRate = 1f;
@@ -15,10 +16,13 @@ public class Goose : MonoBehaviour
 
     [Header("Laser Goose")]
     public bool useLaser= false;
-    public int damageOver = 30;
+    public int damageOverTime = 30;
+    public float slow = 0.5f;
     public LineRenderer lineRenderer;
     public ParticleSystem impactEffect;
     public Light impactLight;
+
+
     [Header("Setup")]
     public string enemyTag = "Enemy";
     public Transform rotate;
@@ -48,6 +52,7 @@ public class Goose : MonoBehaviour
         }
         if (near != null && shortest <= range) {
             target = near.transform;
+            targetEnemy = near.GetComponent<Enemy>();
         }
         else
         {
@@ -98,6 +103,8 @@ public class Goose : MonoBehaviour
 
     void Laser()
     {
+        targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
+        targetEnemy.Slow(slow);
         if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
@@ -123,4 +130,6 @@ public class Goose : MonoBehaviour
         Vector3 rotation = Quaternion.Lerp(rotate.rotation, lookrotation, Time.deltaTime * turnSpeed).eulerAngles;
         rotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
     }
+
+  
 }
