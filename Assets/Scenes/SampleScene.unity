@@ -1910,7 +1910,7 @@ MonoBehaviour:
     type: 3}
   rocketTurretPrefab: {fileID: 4551564804527460633, guid: 61e71768b5c32c84094d05b1e8e9047d,
     type: 3}
-  laserTurretPrefab: {fileID: 6392064775309915634, guid: 10503bd3cf947aa4bb41f89968472df2,
+  laserTurretPrefab: {fileID: 5336434642748628885, guid: f4099f6be2be29644bab4f303fd4c3ed,
     type: 3}
   buildEffect: {fileID: 8560469034557599388, guid: 06c30b5714f59644ba78e29984d29a49,
     type: 3}
