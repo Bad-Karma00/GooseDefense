@@ -39,16 +39,17 @@ public class Node : MonoBehaviour
         if (EventSystem.current.IsPointerOverGameObject())
             return;
         
+        if (turret != null)
+        {
+            buildManager.SelectNode(this);
+            return;
+        }
+
         if (!buildManager.CanBuild)
         {
             return;
         }
 
-        if (turret != null)
-        {
-            Debug.Log("Un oca è già qui!");
-
-        }
         if (buildManager.CanBuild && turret == null) {
             buildManager.BuildTurretOn(this);
             if (buildManager.HasMoney)
