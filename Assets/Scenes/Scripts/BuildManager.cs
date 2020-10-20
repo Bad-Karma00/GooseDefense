@@ -24,6 +24,8 @@ public class BuildManager : MonoBehaviour
 
     public GameObject buildEffect;
 
+    public GameObject sellEffect;
+
     private Node selectedNode;
 
     private TurretBlueprint turretToBuild;

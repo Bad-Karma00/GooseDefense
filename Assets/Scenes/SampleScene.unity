@@ -1955,6 +1955,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 1471270819}
   upgradeCost: {fileID: 1939838473}
+  sellCost: {fileID: 2113943420}
   upgradeButton: {fileID: 1275558150}
 --- !u!4 &646997451 stripped
 Transform:
@@ -2268,6 +2269,8 @@ MonoBehaviour:
   laserTurretPrefab: {fileID: 5336434642748628885, guid: f4099f6be2be29644bab4f303fd4c3ed,
     type: 3}
   buildEffect: {fileID: 8560469034557599388, guid: 06c30b5714f59644ba78e29984d29a49,
+    type: 3}
+  sellEffect: {fileID: 4383153682796086989, guid: 0b7b60055e6e7a04fad34f686c891b2c,
     type: 3}
   nodeUI: {fileID: 634815001}
 --- !u!114 &658253836
@@ -4288,7 +4291,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1307978583}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 634815001}
+        m_MethodName: Sell
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1307978583
 MonoBehaviour:
   m_ObjectHideFlags: 0
