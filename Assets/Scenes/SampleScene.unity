@@ -200,7 +200,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36454871}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
   m_Name: 
@@ -1954,6 +1954,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UI: {fileID: 1471270819}
+  upgradeCost: {fileID: 1939838473}
+  upgradeButton: {fileID: 1275558150}
 --- !u!4 &646997451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 694072810762756470, guid: b63cddde7ff3c96488cd744404f83d7b,
@@ -2280,7 +2282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29ef05e559fd0f4b948c6d8ac277f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 400
+  startMoney: 900
   startLives: 1
 --- !u!114 &658253837
 MonoBehaviour:
@@ -4056,6 +4058,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1662268231}
+  - {fileID: 1939838475}
   m_Father: {fileID: 714213693}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4106,7 +4109,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1275558151}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 634815001}
+        m_MethodName: Upgrade
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1275558151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4223,6 +4237,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1797232848}
+  - {fileID: 2113943419}
   m_Father: {fileID: 714213693}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5809,7 +5824,7 @@ GameObject:
   - component: {fileID: 1662268233}
   - component: {fileID: 1662268232}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextUpgrade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5831,8 +5846,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 15.125}
+  m_SizeDelta: {x: 0, y: -30.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1662268232
 MonoBehaviour:
@@ -5854,21 +5869,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
+    m_Font: {fileID: 12800000, guid: 82c89d56c06aa9743b840a8a44102e9d, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<b>MIGLIORA</b>
-
-    100$'
+  m_Text: MIGLIORA
 --- !u!222 &1662268233
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6411,14 +6424,23 @@ MonoBehaviour:
     prefab: {fileID: 4607450300016917513, guid: 5c2304985b58a85459c3d46aa13fd0f6,
       type: 3}
     cost: 100
+    upgradedPrefab: {fileID: 9125418190508636043, guid: 0fc9d552a353b5643a7d55c0b194ae4e,
+      type: 3}
+    upgradeCost: 150
   missleLauncher:
     prefab: {fileID: 4551564804527460633, guid: 61e71768b5c32c84094d05b1e8e9047d,
       type: 3}
     cost: 250
+    upgradedPrefab: {fileID: 4949056833550599310, guid: da3ae39b0c0a9df4cb6715c2d32deb0f,
+      type: 3}
+    upgradeCost: 350
   laserTurret:
     prefab: {fileID: 5336434642748628885, guid: f4099f6be2be29644bab4f303fd4c3ed,
       type: 3}
     cost: 200
+    upgradedPrefab: {fileID: 8296469634756794586, guid: 02940817cab776e48846f1292e339300,
+      type: 3}
+    upgradeCost: 750
 --- !u!4 &1779283679 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 694072810762756470, guid: b63cddde7ff3c96488cd744404f83d7b,
@@ -6449,7 +6471,7 @@ GameObject:
   - component: {fileID: 1797232850}
   - component: {fileID: 1797232849}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TextSell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6471,8 +6493,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 15.125}
+  m_SizeDelta: {x: 0, y: -30.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1797232849
 MonoBehaviour:
@@ -6494,21 +6516,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
+    m_Font: {fileID: 12800000, guid: 82c89d56c06aa9743b840a8a44102e9d, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 4
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '<b>VENDI</b>
-
-    50$'
+  m_Text: VENDI
 --- !u!222 &1797232850
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6685,6 +6705,84 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 433095940}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1939838472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939838475}
+  - component: {fileID: 1939838474}
+  - component: {fileID: 1939838473}
+  m_Layer: 0
+  m_Name: TextCost
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1939838473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939838472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 100$
+--- !u!222 &1939838474
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939838472}
+  m_CullTransparentMesh: 0
+--- !u!224 &1939838475
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939838472}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1275558149}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -15.935}
+  m_SizeDelta: {x: 0, y: -30.47}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1944181895 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 694072810762756470, guid: b63cddde7ff3c96488cd744404f83d7b,
@@ -7156,6 +7254,84 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7265751191606910436}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2113943418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113943419}
+  - component: {fileID: 2113943421}
+  - component: {fileID: 2113943420}
+  m_Layer: 0
+  m_Name: TextProfit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2113943419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113943418}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.00001362392}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1307978581}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.000011444092, y: -15.585}
+  m_SizeDelta: {x: 0, y: -31.17}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2113943420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113943418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 50$
+--- !u!222 &2113943421
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113943418}
+  m_CullTransparentMesh: 0
 --- !u!4 &2114451520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 694072810762756470, guid: b63cddde7ff3c96488cd744404f83d7b,
