@@ -5,6 +5,11 @@ public class PauseMenu : MonoBehaviour
 {
 
     public GameObject UI;
+
+    public SceneFader sceneFader;
+
+    public string menuSceneName = "Main Menu";
+
     public void Toggle()
     {
         UI.SetActive(!UI.activeSelf);
@@ -22,11 +27,12 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         Toggle();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        sceneFader.FadeTo(SceneManager.GetActiveScene().name);
     }
 
     public void Menu()
     {
-        Debug.Log("Da implementare");
+        Toggle();
+        sceneFader.FadeTo(menuSceneName);
     }
 }
