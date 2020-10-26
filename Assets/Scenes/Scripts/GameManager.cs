@@ -7,6 +7,9 @@ public class GameManager : MonoBehaviour
     public static bool gameIsOver;
 
     public GameObject gameOverIU;
+    public int levelToUnlock=2;
+    public string next= "Livello2";
+    public SceneFader fader;
 
     private void Start()
     {
@@ -31,5 +34,15 @@ public class GameManager : MonoBehaviour
         gameIsOver = true;
         gameOverIU.SetActive(true);
 
+    }
+
+    public void WinLevel() {
+        Debug.Log("LIVELLO COMPLETATO");
+
+        if (PlayerPrefs.GetInt("levelReached") < levelToUnlock)
+        {
+            PlayerPrefs.SetInt("levelReached", levelToUnlock);
+        }
+        fader.FadeTo(next);
     }
 }
