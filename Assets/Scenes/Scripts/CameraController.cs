@@ -6,7 +6,7 @@ public class CameraController : MonoBehaviour
 {
     Vector3 touchStart;
     public float zoomOutMin = 1;
-    public float zoomOutMax = 8;
+    public float zoomOutMax = 38;
 
     // Update is called once per frame
     void Update()
