@@ -13,7 +13,7 @@ public class Enemy : MonoBehaviour
 
     public float startHealth = 100;
     private float health;
-    public bool isDead;
+    public bool isDead=false;
     public int value = 50;
 
     public GameObject deathEffect;
@@ -22,7 +22,6 @@ public class Enemy : MonoBehaviour
     public Image healthBar;
 
     void Start() {
-        isDead = false;
         speed = startspeed;
         health = startHealth;
     }
@@ -47,8 +46,7 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         PlayerStats.Money += value;
-
-
+        isDead = true;
         GameObject effect = (GameObject) Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(effect, 5f);
         WaveSpawner.EnemiesAlive--;

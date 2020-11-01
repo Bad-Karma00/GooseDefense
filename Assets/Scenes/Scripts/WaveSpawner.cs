@@ -34,10 +34,18 @@ public class WaveSpawner : MonoBehaviour
 
         if (waveIndex >= waves.Length && EnemiesAlive <= 0)
         {
+            if (PlayerStats.Lives <= 0)
+            {
+                return;
+            }
             //End level
-            gamemanager.WinLevel();
-            this.enabled = false;
-            return;
+            if (PlayerStats.Lives > 0)
+            {
+                gamemanager.WinLevel();
+                this.enabled = false;
+                return;
+            }
+
         }
         if (countdown <= 0f)
         {
