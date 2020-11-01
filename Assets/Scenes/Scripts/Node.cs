@@ -37,6 +37,11 @@ public class Node : MonoBehaviour
         return transform.position + positionOffset;
     }
 
+    private void OnMouseOver()
+    {
+        
+    }
+
     private void OnMouseDown()
     {
 
