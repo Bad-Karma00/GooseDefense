@@ -27,7 +27,13 @@ public class NodeUIScript : MonoBehaviour
             upgradeCost.text = "FATTO!";
             upgradeButton.interactable = false;
         }
-        sellCost.text = "$" + target.turretBlueprint.getSell();
+        if (target.isUpgraded == false)
+        {
+            sellCost.text = "$" + target.turretBlueprint.getSell();
+        }
+        else {
+            sellCost.text = "$" + target.turretBlueprint.getSellUp();
+        }
        
    
     }

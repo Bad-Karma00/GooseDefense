@@ -113,7 +113,14 @@ public class Node : MonoBehaviour
 
     public void SellTurret()
     {
-        PlayerStats.Money += turretBlueprint.getSell();
+        if (isUpgraded == true)
+        {
+            PlayerStats.Money += turretBlueprint.getSellUp();
+        }
+        if (isUpgraded == false)
+        {
+            PlayerStats.Money += turretBlueprint.getSell();
+        }
 
         GameObject effect = (GameObject)Instantiate(buildManager.sellEffect, GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 5f);
