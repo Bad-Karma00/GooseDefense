@@ -7,9 +7,12 @@ public class LevelSelector : MonoBehaviour
 {
     public SceneFader fader;
     public Button[] levelbuttons;
+    public Button menubutton;
+    public string menuName = "Main Menu";
 
     void Start()
     {
+        menubutton.interactable = true;
         int levelReached = PlayerPrefs.GetInt("levelReached",1);
 
         for (int i = 0; i < levelbuttons.Length; i++) {
@@ -22,5 +25,8 @@ public class LevelSelector : MonoBehaviour
     public void Select(string Levelname)
     {
         fader.FadeTo(Levelname);
+    }
+    public void Menu() {
+        fader.FadeTo(menuName);
     }
 }
