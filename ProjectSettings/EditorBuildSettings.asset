@@ -12,8 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Livelli/LevelSelect.unity
     guid: 81357d86a3a13f64cae06c521774f1ee
   - enabled: 1
-    path: Assets/Scenes/Livelli/Testing.unity
+    path: Assets/Scenes/Livelli/Livello1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Livelli/Livello2.unity
+    guid: 8e27c4a7f1b99a14aab2e80b8116ca87
+  - enabled: 1
+    path: Assets/Scenes/Livelli/Livello3.unity
+    guid: ce24e39c918cde04980b7d1e706f52e3
+  - enabled: 1
+    path: Assets/Scenes/Livelli/Testing.unity
+    guid: b0e84ae053d2b624ba83b4d821c98884
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

@@ -6,13 +6,19 @@ public class CompleteLevel : MonoBehaviour
 {
 
     public SceneFader sceneFader;
-    public string menuSceneName = "Main Menu";
+    public string levelSceneName = "LevelSelect";
     public int levelToUnlock = 2;
     public string next = "Livello2";
 
-    public void Menu()
+    public void LevelSelection()
     {
-        sceneFader.FadeTo(menuSceneName);
+        Debug.Log("LIVELLO COMPLETATO");
+
+        if (PlayerPrefs.GetInt("levelReached") < levelToUnlock)
+        {
+            PlayerPrefs.SetInt("levelReached", levelToUnlock);
+        }
+        sceneFader.FadeTo(levelSceneName);
     }
 
     public void Continue() {
