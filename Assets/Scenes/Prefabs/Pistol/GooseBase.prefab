@@ -17,6 +17,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8107912190112770863, guid: dcb75982c3fa89840a058a0d2301d097,
     type: 3}
   useLaser: 0
+  damageOverTime: 30
+  slow: 0.5
   lineRenderer: {fileID: 0}
   impactEffect: {fileID: 0}
   impactLight: {fileID: 0}
@@ -64,7 +66,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4607450300016917512}
   m_Layer: 0
-  m_Name: GooseFinale
+  m_Name: PistolGoose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
