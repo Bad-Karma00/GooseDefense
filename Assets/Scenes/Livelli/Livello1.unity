@@ -2571,7 +2571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd09666a58ba924cb2753be8d8118bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurretPrefab: {fileID: 4607450300016917513, guid: 5c2304985b58a85459c3d46aa13fd0f6,
+  standardTurretPrefab: {fileID: 8964234725613884999, guid: 24e16a04eeab490499a1c1a223f2afa4,
     type: 3}
   rocketTurretPrefab: {fileID: 4551564804527460633, guid: 61e71768b5c32c84094d05b1e8e9047d,
     type: 3}
@@ -8424,7 +8424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurret:
-    prefab: {fileID: 4607450300016917513, guid: 5c2304985b58a85459c3d46aa13fd0f6,
+    prefab: {fileID: 8964234725613884999, guid: 24e16a04eeab490499a1c1a223f2afa4,
       type: 3}
     cost: 100
     upgradedPrefab: {fileID: 9125418190508636043, guid: 0fc9d552a353b5643a7d55c0b194ae4e,
@@ -9339,7 +9339,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd6d09f6835661c40bc1a6ea71415f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selltext: {fileID: 2113943420}
 --- !u!4 &2114451520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 694072810762756470, guid: b63cddde7ff3c96488cd744404f83d7b,
