@@ -14,11 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireRate: 0.5
   range: 20
+  bulletPrefab: {fileID: 9068799868384088148, guid: 77579731190206640a9409651c526af2,
+    type: 3}
+  useLaser: 0
+  damageOverTime: 30
+  slow: 0.5
+  lineRenderer: {fileID: 0}
+  impactEffect: {fileID: 0}
+  impactLight: {fileID: 0}
   enemyTag: Enemy
   rotate: {fileID: 4551564804527460632}
   turnSpeed: 10
-  bulletPrefab: {fileID: 9068799868384088148, guid: 77579731190206640a9409651c526af2,
-    type: 3}
   firePoint: {fileID: 4551564805029267691}
 --- !u!1 &4551564804527460633
 GameObject:
@@ -30,7 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4551564804527460632}
   m_Layer: 0
-  m_Name: Lanciarazzi
+  m_Name: RocketGoose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,7 +51,7 @@ Transform:
   m_GameObject: {fileID: 4551564804527460633}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -30.973833, y: 49.029697, z: -40.359276}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 4080491534549643394}
   m_Father: {fileID: 0}
