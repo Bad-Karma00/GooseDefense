@@ -114,7 +114,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 8107912190112770863, guid: dcb75982c3fa89840a058a0d2301d097,
     type: 3}
   useLaser: 1
-  damageOver: 30
+  damageOverTime: 30
+  slow: 0.5
   lineRenderer: {fileID: 4071918408876912847}
   impactEffect: {fileID: 8147237255085825294}
   impactLight: {fileID: 4390475356324797150, guid: 49d47ba09aba5a94f85a9df67149e261,
@@ -178,7 +179,7 @@ Transform:
   m_GameObject: {fileID: 5336434642748628885}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 13.402479, y: 48.845844, z: -56.880985}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 5585706492008906254}
   - {fileID: 6991564086170477041}
