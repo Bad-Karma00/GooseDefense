@@ -18548,8 +18548,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 202323583}
   levelSceneName: LevelSelect
-  levelToUnlock: 2
-  next: Livello2
+  levelToUnlock: 3
+  next: VeroLivello3
 --- !u!95 &1645112212
 Animator:
   serializedVersion: 3
