@@ -2571,7 +2571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edd09666a58ba924cb2753be8d8118bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  standardTurretPrefab: {fileID: 6943573261586919243, guid: 6bffef6d8f86d724b8ddbbeda3722c51,
+  standardTurretPrefab: {fileID: 6366245765258590483, guid: b4758cbec1c09b645946bc12c4e8b9f0,
     type: 3}
   rocketTurretPrefab: {fileID: 4551564804527460633, guid: 61e71768b5c32c84094d05b1e8e9047d,
     type: 3}
@@ -8424,10 +8424,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurret:
-    prefab: {fileID: 6943573261586919243, guid: 6bffef6d8f86d724b8ddbbeda3722c51,
+    prefab: {fileID: 6366245765258590483, guid: b4758cbec1c09b645946bc12c4e8b9f0,
       type: 3}
     cost: 100
-    upgradedPrefab: {fileID: 9125418190508636043, guid: 0fc9d552a353b5643a7d55c0b194ae4e,
+    upgradedPrefab: {fileID: 6302912739806512940, guid: c309c5d72a0a67448b22a857653d391b,
       type: 3}
     upgradeCost: 150
   missleLauncher:
