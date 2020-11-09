@@ -1859,7 +1859,7 @@ PrefabInstance:
     - target: {fileID: 114165832186565126, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Livello1
+      value: VeroLivello1
       objectReference: {fileID: 0}
     - target: {fileID: 224305341502267110, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
