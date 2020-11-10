@@ -30,6 +30,6 @@ EditorBuildSettings:
     path: Assets/Assets di Gioco/Livelli/Livello 2/VeroLivello2.unity
     guid: 364c0d2a43ff75242ad0bdfcd434aced
   - enabled: 1
-    path: Assets/Assets di Gioco/Livelli/Livello 3/VeroLivello 3.unity
+    path: Assets/Assets di Gioco/Livelli/Livello 3/VeroLivello3.unity
     guid: 8988f3203cf3e1544a39ad0e0be547ec
   m_configObjects: {}
