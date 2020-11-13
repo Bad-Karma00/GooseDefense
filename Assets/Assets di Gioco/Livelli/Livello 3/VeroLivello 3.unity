@@ -4158,7 +4158,6 @@ GameObject:
   - component: {fileID: 553756491}
   - component: {fileID: 553756493}
   - component: {fileID: 553756494}
-  - component: {fileID: 553756492}
   m_Layer: 0
   m_Name: TextProfit
   m_TagString: Untagged
@@ -4185,18 +4184,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000011444092, y: -15.585}
   m_SizeDelta: {x: 0, y: -31.17}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &553756492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 553756490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd6d09f6835661c40bc1a6ea71415f7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!222 &553756493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10042,6 +10029,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9938565ce3a916e408874c05a23719cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameiswin: 0
   gameOverIU: {fileID: 400002924}
   CompleteLevelUI: {fileID: 1645112209}
 --- !u!114 &1124995946

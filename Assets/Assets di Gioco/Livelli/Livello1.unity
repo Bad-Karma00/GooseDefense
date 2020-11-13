@@ -9260,7 +9260,6 @@ GameObject:
   - component: {fileID: 2113943419}
   - component: {fileID: 2113943421}
   - component: {fileID: 2113943420}
-  - component: {fileID: 2113943422}
   m_Layer: 0
   m_Name: TextProfit
   m_TagString: Untagged
@@ -9328,18 +9327,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2113943418}
   m_CullTransparentMesh: 0
---- !u!114 &2113943422
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2113943418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd6d09f6835661c40bc1a6ea71415f7d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &2114451520 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 694072810762756470, guid: b63cddde7ff3c96488cd744404f83d7b,

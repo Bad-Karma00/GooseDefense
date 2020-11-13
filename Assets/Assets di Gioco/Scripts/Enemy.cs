@@ -11,9 +11,11 @@ public class Enemy : MonoBehaviour
     [HideInInspector]
     public float speed;
 
+    [HideInInspector]
+    public bool isDead;
+
     public float startHealth = 100;
     private float health;
-    public bool isDead=false;
     public int value = 50;
 
     public GameObject deathEffect;
@@ -24,6 +26,7 @@ public class Enemy : MonoBehaviour
     void Start() {
         speed = startspeed;
         health = startHealth;
+        isDead = false;
     }
 
     public void TakeDamage(float amount)
