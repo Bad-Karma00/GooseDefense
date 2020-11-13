@@ -11820,8 +11820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5564b08c66ac81246bcb83bb9fd38240, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  zoomOutMin: 1.5
-  zoomOutMax: 5
+  zoomOutMin: 0.5
+  zoomOutMax: 3
 --- !u!1001 &971408881
 PrefabInstance:
   m_ObjectHideFlags: 0

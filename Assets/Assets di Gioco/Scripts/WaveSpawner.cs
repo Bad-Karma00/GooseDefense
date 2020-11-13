@@ -43,7 +43,7 @@ public class WaveSpawner : MonoBehaviour
             {
                 return;
             }
-            //End level
+          
             if (PlayerStats.Lives > 0)
             {
                 PlayerStats.Rounds++;
