@@ -15,10 +15,14 @@ public class GameOver : MonoBehaviour
     public void Retry()
     {
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
+        FindObjectOfType<MusicScript>().Stop("MusicLevel");
+        FindObjectOfType<MusicScript>().Play("MusicLevel");
     }
 
     public void Menu()
     {
         sceneFader.FadeTo(menuSceneName);
+        FindObjectOfType<MusicScript>().Stop("MusicLevel");
+        FindObjectOfType<MusicScript>().Play("MusicaBG");
     }
 }
