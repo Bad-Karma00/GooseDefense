@@ -13,6 +13,8 @@ public class CompleteLevel : MonoBehaviour
     public void LevelSelection()
     {
         Debug.Log("LIVELLO COMPLETATO");
+        FindObjectOfType<MusicScript>().Stop("MusicLevel");
+        FindObjectOfType<MusicScript>().Play("MusicaBG");
 
         if (PlayerPrefs.GetInt("levelReached") < levelToUnlock)
         {
@@ -23,6 +25,8 @@ public class CompleteLevel : MonoBehaviour
 
     public void Continue() {
         Debug.Log("LIVELLO COMPLETATO");
+        FindObjectOfType<MusicScript>().Stop("MusicLevel");
+        FindObjectOfType<MusicScript>().Play("MusicLevel");
 
         if (PlayerPrefs.GetInt("levelReached") < levelToUnlock)
         {

@@ -30,12 +30,14 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         gameIsOver = true;
+        FindObjectOfType<MusicScript>().Stop("MusicLevel");
         gameOverIU.SetActive(true);
 
     }
 
     public void WinLevel() {
         gameIsOver = true;
+        FindObjectOfType<MusicScript>().Stop("MusicLevel");
         gameiswin = true;
         CompleteLevelUI.SetActive(true);
     }
