@@ -10,10 +10,12 @@ public class Enemy : MonoBehaviour
     
     [HideInInspector]
     public float speed;
+   
+    [HideInInspector]
+    public bool isDead = false;
 
     public float startHealth = 100;
     private float health;
-    public bool isDead=false;
     public int value = 50;
 
     public GameObject deathEffect;
