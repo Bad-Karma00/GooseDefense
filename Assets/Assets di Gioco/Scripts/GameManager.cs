@@ -33,6 +33,10 @@ public class GameManager : MonoBehaviour
     {
         gameIsOver = true;
         FindObjectOfType<MusicScript>().Stop("MusicLevel");
+        FindObjectOfType<MusicScript>().Stop("GunShoot");
+        FindObjectOfType<MusicScript>().Stop("Explosion");
+        FindObjectOfType<MusicScript>().Stop("RocketShoot");
+        FindObjectOfType<MusicScript>().Stop("LaserShoot");
         gameOverIU.SetActive(true);
 
     }
@@ -40,6 +44,10 @@ public class GameManager : MonoBehaviour
     public void WinLevel() {
         gameIsOver = true;
         FindObjectOfType<MusicScript>().Stop("MusicLevel");
+        FindObjectOfType<MusicScript>().Stop("GunShoot");
+        FindObjectOfType<MusicScript>().Stop("Explosion");
+        FindObjectOfType<MusicScript>().Stop("RocketShoot");
+        FindObjectOfType<MusicScript>().Stop("LaserShoot");
         gameiswin = true;
         CompleteLevelUI.SetActive(true);
     }

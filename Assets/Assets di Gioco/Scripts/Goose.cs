@@ -69,6 +69,7 @@ public class Goose : MonoBehaviour
             if (useLaser) {
                 if (lineRenderer.enabled) {
                     lineRenderer.enabled = false;
+                    FindObjectOfType<MusicScript>().Stop("LaserShoot");
                     impactEffect.Stop();
                     impactLight.enabled = false;
                 }
@@ -92,13 +93,16 @@ public class Goose : MonoBehaviour
 
 
     void Shoot() {
-        GameObject bulletGO= (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        GameObject bulletGO = (GameObject) Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Bullet bullet = bulletGO.GetComponent<Bullet>();
-        if (bullet != null) {
+        if(bullet.ToString() == "Bullet(Clone) (Bullet)" || bullet.ToString() == "Bullet_Upgradato(Clone) (Bullet)")
+            FindObjectOfType<MusicScript>().Play("GunShoot");
+        else if (bullet.ToString() == "Missile 2.0(Clone) (Bullet)" || bullet.ToString() == "Missile_Upgradato(Clone) (Bullet)")
+            FindObjectOfType<MusicScript>().Play("RocketShoot");
+        if (bullet != null)
+        {
             bullet.Search(target);
         }
-
-    
     }
 
     void Laser()
@@ -108,7 +112,8 @@ public class Goose : MonoBehaviour
         if (!lineRenderer.enabled)
         {
             lineRenderer.enabled = true;
-            impactEffect.Play();
+            FindObjectOfType<MusicScript>().Play("LaserShoot");
+            impactEffect.Play();            
             impactLight.enabled = true;
         }
         lineRenderer.SetPosition(0, firePoint.position);
