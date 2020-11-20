@@ -49,6 +49,7 @@ public class Bullet : MonoBehaviour
         if (explosionRadius > 0f)
         {
             Explode();
+            FindObjectOfType<MusicScript>().Play("Explosion");
 
         }
         else {
