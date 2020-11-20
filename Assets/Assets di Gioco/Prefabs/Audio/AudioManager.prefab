@@ -52,7 +52,31 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MusicLevel
     clip: {fileID: 8300000, guid: 4ee122da492202448b6f8d191e9216b9, type: 3}
-    volume: 0.036
+    volume: 0.03
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: GunShoot
+    clip: {fileID: 8300000, guid: 6dd7024f00606b44eb5884197a66a893, type: 3}
+    volume: 0.021
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: d47e6ed162da1f740ad807d00f4679f3, type: 3}
+    volume: 0.021
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: RocketShoot
+    clip: {fileID: 8300000, guid: 0bd05763df902854a80475577a26666a, type: 3}
+    volume: 0.021
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: LaserShoot
+    clip: {fileID: 8300000, guid: 781e0c0ff734abb479eb30aafa3f40c7, type: 3}
+    volume: 0.04
     pitch: 1
     loop: 1
     source: {fileID: 0}
