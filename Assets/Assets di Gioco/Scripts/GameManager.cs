@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static bool gameIsOver;
+    [HideInInspector]
     public bool gameiswin = false;
+
+    public static bool gameIsOver;
     public GameObject gameOverIU;
     public GameObject CompleteLevelUI;
 
