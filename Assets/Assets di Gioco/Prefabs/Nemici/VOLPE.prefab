@@ -398,7 +398,7 @@ GameObject:
   - component: {fileID: 4275940743944178448}
   - component: {fileID: -5817538885276913676}
   m_Layer: 0
-  m_Name: volpe 1
+  m_Name: VOLPE
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,7 +411,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4005486372472565644}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
@@ -420,7 +420,7 @@ Transform:
   - {fileID: 7815384952471879910}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &4275940743944178463
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -480,8 +480,8 @@ MonoBehaviour:
   startspeed: 0.9
   speed: 20
   isDead: 0
-  startHealth: 100
-  value: 50
+  startHealth: 150
+  value: 75
   deathEffect: {fileID: 2388042488859589433, guid: c09a345fee705454ebf753e2143f2b47,
     type: 3}
   healthBar: {fileID: 7340097522737263694}
