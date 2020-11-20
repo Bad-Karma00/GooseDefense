@@ -6382,7 +6382,7 @@ PrefabInstance:
     - target: {fileID: 4949390665498824650, guid: 09e468fac77334a45a5eb84e68507103,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 4949390665498824650, guid: 09e468fac77334a45a5eb84e68507103,
         type: 3}
@@ -6397,7 +6397,7 @@ PrefabInstance:
     - target: {fileID: 4949390665498824650, guid: 09e468fac77334a45a5eb84e68507103,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4949390665498824650, guid: 09e468fac77334a45a5eb84e68507103,
         type: 3}
@@ -6422,7 +6422,7 @@ PrefabInstance:
     - target: {fileID: 4949390665498824650, guid: 09e468fac77334a45a5eb84e68507103,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 4949390665498824651, guid: 09e468fac77334a45a5eb84e68507103,
         type: 3}
@@ -10498,7 +10498,7 @@ MonoBehaviour:
   - enemy: {fileID: 4005486372472565644, guid: f6e68ac63125b764a8b537e57d47ee7e, type: 3}
     count: 5
     rate: 1
-  - enemy: {fileID: 6196411602423313864, guid: 2d835c1322752854b8337c72d3c1d74b, type: 3}
+  - enemy: {fileID: 1827817708107918912, guid: b9a24eeaf66e92c4aba40278aa284979, type: 3}
     count: 5
     rate: 1
   spawnPoint: {fileID: 678033514}
@@ -14357,7 +14357,7 @@ PrefabInstance:
     - target: {fileID: 5672756329487934563, guid: 84372d7b3934751469d81ed41b21b4c8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.183
+      value: -0.416
       objectReference: {fileID: 0}
     - target: {fileID: 5672756329487934563, guid: 84372d7b3934751469d81ed41b21b4c8,
         type: 3}
