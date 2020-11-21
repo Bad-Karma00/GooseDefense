@@ -18,11 +18,13 @@ public class PauseMenuScript : MonoBehaviour
         {
             Time.timeScale = 0f;
             FindObjectOfType<MusicScript>().Pause("MusicLevel");
+            FindObjectOfType<MusicScript>().Pause("LaserShoot");
         }
         else
         {
             Time.timeScale = 1f;
             FindObjectOfType<MusicScript>().Play("MusicLevel");
+            FindObjectOfType<MusicScript>().Play("LaserShoot");
         }
     }
 
@@ -32,6 +34,7 @@ public class PauseMenuScript : MonoBehaviour
         sceneFader.FadeTo(SceneManager.GetActiveScene().name);
         FindObjectOfType<MusicScript>().Stop("MusicLevel");
         FindObjectOfType<MusicScript>().Play("MusicLevel");
+        FindObjectOfType<MusicScript>().Stop("LaserShoot");
     }
 
     public void Menu()
@@ -40,5 +43,6 @@ public class PauseMenuScript : MonoBehaviour
         sceneFader.FadeTo(menuSceneName);
         FindObjectOfType<MusicScript>().Stop("MusicLevel");
         FindObjectOfType<MusicScript>().Play("MusicaBG");
+        FindObjectOfType<MusicScript>().Stop("LaserShoot");
     }
 }
