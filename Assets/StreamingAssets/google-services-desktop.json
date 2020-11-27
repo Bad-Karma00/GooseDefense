@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "536704967437",
+    "firebase_url": "https://goosedefense-8d9f4.firebaseio.com",
+    "project_id": "goosedefense-8d9f4",
+    "storage_bucket": "goosedefense-8d9f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536704967437:android:3cacca6b129b541d5dc644",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.GooseDefense"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536704967437-82j73l3dntl9fomtl5e45ugebbitfjr7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjJ5mu6w_7z-2tx_lQD-XJLkknNBPwcQg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536704967437-82j73l3dntl9fomtl5e45ugebbitfjr7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
