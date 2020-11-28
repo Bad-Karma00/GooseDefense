@@ -389,7 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2767123b2f624cd4e8e9e09f2c7a48da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fader: {fileID: 2733477633715979095, guid: b960c2bb1d855d94c9e41053df9170e0, type: 3}
+  fader: {fileID: 1432973988}
   dependencyStatus: 0
   emailLoginField: {fileID: 728009125}
   passwordLoginField: {fileID: 288471328}
@@ -3788,6 +3788,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1405211356}
   m_CullTransparentMesh: 0
+--- !u!114 &1432973988 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2733477633715979095, guid: b960c2bb1d855d94c9e41053df9170e0,
+    type: 3}
+  m_PrefabInstance: {fileID: 2043926736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24e7973a8b2f5414983cf08022de765d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1484623461
 GameObject:
   m_ObjectHideFlags: 0
