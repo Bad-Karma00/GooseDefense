@@ -6,6 +6,8 @@ using TMPro;
 
 public class AuthManager : MonoBehaviour
 {
+    private bool logged = false;
+    public SceneFader fader;
     //Firebase variables
     [Header("Firebase")]
     public DependencyStatus dependencyStatus;
@@ -56,7 +58,10 @@ public class AuthManager : MonoBehaviour
     public void LoginButton()
     {
         //Call the login coroutine passing the email and password
-        StartCoroutine(Login(emailLoginField.text, passwordLoginField.text));
+        
+            StartCoroutine(Login(emailLoginField.text, passwordLoginField.text));
+        
+        
     }
     //Function for the register button
     public void RegisterButton()
@@ -71,6 +76,7 @@ public class AuthManager : MonoBehaviour
         var LoginTask = auth.SignInWithEmailAndPasswordAsync(_email, _password);
         //Wait until the task completes
         yield return new WaitUntil(predicate: () => LoginTask.IsCompleted);
+        
 
         if (LoginTask.Exception != null)
         {
@@ -104,10 +110,13 @@ public class AuthManager : MonoBehaviour
         {
             //User is now logged in
             //Now get the result
+            logged = true;
             User = LoginTask.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
+            StopAllCoroutines();
+            fader.FadeTo("Main Menu");
         }
     }
 
