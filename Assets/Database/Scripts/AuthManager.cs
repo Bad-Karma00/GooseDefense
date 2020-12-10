@@ -5,9 +5,10 @@ using Firebase.Auth;
 using TMPro;
 
 public class AuthManager : MonoBehaviour
-{
+{  
     private bool logged = false;
     public SceneFader fader;
+  
     //Firebase variables
     [Header("Firebase")]
     public DependencyStatus dependencyStatus;
@@ -192,6 +193,7 @@ public class AuthManager : MonoBehaviour
                     {
                         //Username is now set
                         //Now return to login screen
+                        User user=new User(_username, 1);
                         UIManager.instance.LoginScreen();
                         warningRegisterText.text = "";
                     }
