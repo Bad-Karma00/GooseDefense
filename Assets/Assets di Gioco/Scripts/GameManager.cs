@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Proyecto26;
 
 public class GameManager : MonoBehaviour
 {
@@ -49,7 +50,10 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<MusicScript>().Stop("RocketShoot");
         FindObjectOfType<MusicScript>().Stop("LaserShoot");
         gameiswin = true;
+        AuthHandler.utente.level++;
+        DatabaseHandler.PostUser(AuthHandler.utente, AuthHandler.identificativo, () => { }, AuthHandler.token);
         CompleteLevelUI.SetActive(true);
     }
-   
 }
+   
+
