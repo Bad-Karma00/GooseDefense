@@ -8,7 +8,7 @@ public class PauseMenuScript : MonoBehaviour
 
     public SceneFader sceneFader;
 
-    public string menuSceneName = "Main Menu";
+    public string menuSceneName = "VeroMenu";
 
     public void Toggle()
     {

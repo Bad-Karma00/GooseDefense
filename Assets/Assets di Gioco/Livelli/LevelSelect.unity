@@ -304,7 +304,7 @@ MonoBehaviour:
   - {fileID: 1124089448}
   - {fileID: 747960750}
   menubutton: {fileID: 708960889}
-  menuName: Main menu
+  menuName: VeroMenu
 --- !u!4 &492422543
 Transform:
   m_ObjectHideFlags: 0
