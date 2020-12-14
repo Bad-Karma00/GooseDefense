@@ -50,9 +50,12 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<MusicScript>().Stop("RocketShoot");
         FindObjectOfType<MusicScript>().Stop("LaserShoot");
         gameiswin = true;
-        AuthHandler.utente.level++;
-        DatabaseHandler.PostUser(AuthHandler.utente, AuthHandler.identificativo, () => { }, AuthHandler.token);
-        CompleteLevelUI.SetActive(true);
+        if (AuthHandler.utente.level ==PlayerPrefs.GetInt("livelloCorrente")) {
+            AuthHandler.utente.level++;
+            DatabaseHandler.PostUser(AuthHandler.utente, AuthHandler.identificativo, () => { }, AuthHandler.token);
+        }
+            CompleteLevelUI.SetActive(true);
+        
     }
 }
    

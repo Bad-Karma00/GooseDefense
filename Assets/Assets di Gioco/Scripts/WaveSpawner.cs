@@ -16,6 +16,7 @@ public class WaveSpawner : MonoBehaviour
     private float countdown = 2f;
 
     private int waveIndex = 0;
+    public int livelloCorrente;
 
     public Text waveCountdownText;
     public GameManager gamemanager;
@@ -23,6 +24,7 @@ public class WaveSpawner : MonoBehaviour
      void Start()
     {
         EnemiesAlive = 0;
+        PlayerPrefs.SetInt("livelloCorrente", livelloCorrente);
 
     }
 
