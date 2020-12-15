@@ -2319,9 +2319,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ESCI
-
-'
+  m_Text: QUIT
 --- !u!222 &201852573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3788,6 +3786,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3467523905477083236, guid: fc47a41f239a5694a8087fa2f139ae91,
+        type: 3}
+      propertyPath: m_Text
+      value: PLAY
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc47a41f239a5694a8087fa2f139ae91, type: 3}
@@ -10384,12 +10387,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: 7ce084bf604d8ed42b0e5b3af6fe516a,
-        type: 3}
+      objectReference: {fileID: 1538716488}
     - target: {fileID: 114165832186565126, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_name
+      value: Select
       objectReference: {fileID: 0}
     - target: {fileID: 114165832186565126, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
@@ -11457,12 +11459,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: 7ce084bf604d8ed42b0e5b3af6fe516a,
-        type: 3}
+      objectReference: {fileID: 1538716488}
     - target: {fileID: 114165832186565126, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_name
+      value: Select
       objectReference: {fileID: 0}
     - target: {fileID: 114165832186565126, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
@@ -19905,12 +19906,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11500000, guid: 7ce084bf604d8ed42b0e5b3af6fe516a,
-        type: 3}
+      objectReference: {fileID: 1538716488}
     - target: {fileID: 114165832186565126, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_name
+      value: Select
       objectReference: {fileID: 0}
     - target: {fileID: 114165832186565126, guid: 57aa2d0bf21537743a7ea25021c2d473,
         type: 3}
