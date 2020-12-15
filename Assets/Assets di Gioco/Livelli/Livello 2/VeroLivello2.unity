@@ -4533,9 +4533,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'PAUSA
-
-'
+  m_Text: PAUSE
 --- !u!222 &317991459
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6579,7 +6577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LIVELLO COMPLETATO!
+  m_Text: LEVEL COMPLETED!
 --- !u!222 &467732858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8621,7 +8619,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
-    m_FontSize: 100
+    m_FontSize: 80
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8632,7 +8630,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Game Over!
+  m_Text: GAME OVER!
 --- !u!222 &659519338
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9528,7 +9526,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Vite: 2'
+  m_Text: 'LIVES: 2'
 --- !u!222 &755657542
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9829,7 +9827,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MEN\xD9"
+  m_Text: MENU
 --- !u!222 &780372194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10570,7 +10568,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RIPROVA
+  m_Text: RETRY
 --- !u!222 &842754576
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13040,7 +13038,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SELEZIONA LIVELLO
+  m_Text: LEVEL SELECT
 --- !u!222 &1049454848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13591,7 +13589,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUA
+  m_Text: CONTINUE
 --- !u!222 &1089145545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14039,7 +14037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   UI: {fileID: 170515979}
   sceneFader: {fileID: 202323583}
-  menuSceneName: Main Menu
+  menuSceneName: VeroMenu
 --- !u!114 &1124995943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18261,6 +18259,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1566416067}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1582860706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1644025675556967380, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 708.7218
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 798.6831
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -71.71562
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7613694652007147747, guid: 62ba2e7adcd5e5442883e171babe2253,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 62ba2e7adcd5e5442883e171babe2253, type: 3}
 --- !u!4 &1587423319 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 4b1205a7235860c479fc94aefe26ebf1,
@@ -20235,7 +20302,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: RICOMINCIA
+  m_Text: RESTART
 --- !u!222 &1763981816
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20577,7 +20644,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
-    m_FontSize: 40
+    m_FontSize: 35
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -20588,7 +20655,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ondate superate!
+  m_Text: WAVES CLEARED
 --- !u!222 &1806763745
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21382,7 +21449,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ondate superate!
+  m_Text: WAVES CLEARED
 --- !u!222 &1856608489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21527,7 +21594,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "MEN\xD9"
+  m_Text: MENU
 --- !u!222 &1861177443
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21741,7 +21808,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: CONTINUA
+  m_Text: CONTINUE
 --- !u!222 &1864146819
 CanvasRenderer:
   m_ObjectHideFlags: 0

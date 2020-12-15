@@ -2103,7 +2103,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'ESCI
+  m_Text: 'QUIT
 
 '
 --- !u!222 &201852573
@@ -3498,6 +3498,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Play
       objectReference: {fileID: 0}
+    - target: {fileID: 3467523905477083236, guid: fc47a41f239a5694a8087fa2f139ae91,
+        type: 3}
+      propertyPath: m_Text
+      value: PLAY
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc47a41f239a5694a8087fa2f139ae91, type: 3}
 --- !u!224 &372013380 stripped
@@ -4708,7 +4713,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 1.417, y: 37.649002, z: -1.501}
 --- !u!1001 &507368056
 PrefabInstance:
@@ -20026,7 +20031,7 @@ Transform:
   - {fileID: 1364291615}
   - {fileID: 1640818647}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 245.055, z: 0}
 --- !u!4 &9107871811705597584
 Transform:
