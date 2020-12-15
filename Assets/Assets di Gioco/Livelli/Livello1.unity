@@ -2535,14 +2535,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waves:
-  - enemy: {fileID: 6196411602423313864, guid: f2b0c659944667e408724a221beac3a1, type: 3}
-    count: 5
-    rate: 1
-  - enemy: {fileID: 6196411602423313864, guid: 2d835c1322752854b8337c72d3c1d74b, type: 3}
+  - enemy:
+    - {fileID: 6196411602423313864, guid: f2b0c659944667e408724a221beac3a1, type: 3}
     count: 5
     rate: 1
   spawnPoint: {fileID: 989447023}
   timeBetweenWaves: 5
+  livelloCorrente: 0
   waveCountdownText: {fileID: 1449684277}
   gamemanager: {fileID: 658253837}
 --- !u!4 &658253834
