@@ -9,7 +9,7 @@ public class LevelSelector : MonoBehaviour
     public SceneFader fader;
     public Button[] levelbuttons;
     public Button menubutton;
-    public string menuName = "Main Menu";
+    public string menuName = "VeroMenu";
 
     void Start()
     {

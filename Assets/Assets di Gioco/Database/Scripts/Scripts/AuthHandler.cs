@@ -123,7 +123,7 @@ public class AuthHandler : MonoBehaviour
                 CheckEmailVerification(authResponse["idToken"], () =>
                 {
                     DatabaseHandler.GetUser(userId, user => { identificativo = userId; token = idToken; utente.level = user.level; utente.name = user.name; Debug.Log($"{user.name}, {user.level}"); }, idToken);
-                    fader.FadeTo("Main Menu");
+                    fader.FadeTo("VeroMenu");
                 }, () => { Debug.Log("Email not verified"); });
             });
     }

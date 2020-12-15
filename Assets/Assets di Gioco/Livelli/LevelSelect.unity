@@ -304,7 +304,7 @@ MonoBehaviour:
   - {fileID: 1124089448}
   - {fileID: 747960750}
   menubutton: {fileID: 708960889}
-  menuName: Main menu
+  menuName: VeroMenu
 --- !u!4 &492422543
 Transform:
   m_ObjectHideFlags: 0
@@ -959,13 +959,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 83
-    m_Alignment: 6
+    m_Alignment: 7
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SELEZIONA LIVELLO
+  m_Text: SELECT LEVEL
 --- !u!222 &885715446
 CanvasRenderer:
   m_ObjectHideFlags: 0

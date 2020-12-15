@@ -9,7 +9,9 @@ public class CompleteLevel : MonoBehaviour
     public string levelSceneName = "LevelSelect";
     public int levelToUnlock = 2;
     public string next = "Livello2";
+    
 
+   
     public void LevelSelection()
     {
         Debug.Log("LIVELLO COMPLETATO");
