@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 5336629429044489945}
   - component: {fileID: 3922689789107809206}
   m_Layer: 0
-  m_Name: Orso
+  m_Name: ORSO
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -179,11 +179,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2889775f32a0bd545bcdc7abe1126c4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startspeed: 0.5
+  startspeed: 0.75
   speed: 0
   isDead: 0
-  startHealth: 200
-  value: 50
+  startHealth: 300
+  value: 125
   deathEffect: {fileID: 2388042488859589433, guid: c09a345fee705454ebf753e2143f2b47,
     type: 3}
   healthBar: {fileID: 2633047391692972677}

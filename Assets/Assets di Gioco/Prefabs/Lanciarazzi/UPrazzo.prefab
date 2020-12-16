@@ -158,7 +158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate: 1
-  range: 15
+  range: 1.25
   bulletPrefab: {fileID: 8262099592998331434, guid: 1bcbbefeab5736a428634e8ab4f4c1bb,
     type: 3}
   useLaser: 0

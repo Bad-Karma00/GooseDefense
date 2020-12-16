@@ -2175,7 +2175,7 @@ GameObject:
   - component: {fileID: 201852570}
   - component: {fileID: 201852569}
   m_Layer: 5
-  m_Name: QuitButton
+  m_Name: How to Play Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2189,7 +2189,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201852567}
   m_LocalRotation: {x: -0, y: 0.997884, z: -0, w: -0.065020785}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 63}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2076094127}
@@ -2197,8 +2197,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 187.456, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -48, y: -107}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -13, y: -138}
+  m_SizeDelta: {x: 259.5509, y: 98.66611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &201852569
 Animator:
@@ -2314,13 +2314,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 8
     m_MaxSize: 80
-    m_Alignment: 0
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: QUIT
+  m_Text: TUTORIAL
 --- !u!222 &201852573
 CanvasRenderer:
   m_ObjectHideFlags: 0
