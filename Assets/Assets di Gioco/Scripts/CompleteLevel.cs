@@ -6,7 +6,7 @@ public class CompleteLevel : MonoBehaviour
 {
 
     public SceneFader sceneFader;
-    public string levelSceneName = "LevelSelect";
+    public string levelSceneName = "VeroMenu";
     public int levelToUnlock = 2;
     public string next = "Livello2";
     
