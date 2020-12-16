@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Assets di Gioco/Livelli/Main Menu.unity
     guid: 5f9456da0062df7469928b6941ebfc8d
   - enabled: 1
-    path: Assets/Assets di Gioco/Database/Scenes/ProvaLogin.unity
+    path: Assets/Assets di Gioco/Livelli/ProvaLogin.unity
     guid: f777d775eba8297419850c1afe2aced4
   - enabled: 1
     path: Assets/Assets di Gioco/Livelli/VeroMenu/VeroMenu.unity
