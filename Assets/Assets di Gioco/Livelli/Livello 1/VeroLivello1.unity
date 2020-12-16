@@ -4147,7 +4147,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 202323583}
-  menuSceneName: Main Menu
+  menuSceneName: VeroMenu
 --- !u!95 &400002927
 Animator:
   serializedVersion: 3
@@ -4871,7 +4871,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEVEL COMPLETED!
+  m_Text: 'SUPREME VICTORY!
+
+    LEVEL COMPLETED'
 --- !u!222 &467732858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5642,8 +5644,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 319.91467, y: -50.000027}
-  m_SizeDelta: {x: 206.60977, y: 100.00005}
+  m_AnchoredPosition: {x: 319.91467, y: -50}
+  m_SizeDelta: {x: 206.60977, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &561921094
 Animator:
@@ -6679,7 +6681,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
-    m_FontSize: 100
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -10603,7 +10605,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: LEVEL SELECT
+  m_Text: BACK TO MENU
 --- !u!222 &1049454848
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15375,7 +15377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneFader: {fileID: 202323583}
-  levelSceneName: LevelSelect
+  levelSceneName: VeroMenu
   levelToUnlock: 2
   next: VeroLivello2
 --- !u!95 &1645112212
@@ -21446,8 +21448,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 103.304886, y: -50.000027}
-  m_SizeDelta: {x: 206.60977, y: 100.00005}
+  m_AnchoredPosition: {x: 103.304886, y: -50}
+  m_SizeDelta: {x: 206.60977, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2067054671
 Animator:
