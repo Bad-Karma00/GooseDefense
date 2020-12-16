@@ -3,6 +3,7 @@ using UnityEngine;
 using FullSerializer;
 using Proyecto26;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class AuthHandler : MonoBehaviour
@@ -18,7 +19,6 @@ public class AuthHandler : MonoBehaviour
     public static string userId;
     public static string identificativo;
     public static string token;
-    public SceneFader fader;
     public static User utente = new User("null", 0);
    
 
@@ -46,7 +46,7 @@ public class AuthHandler : MonoBehaviour
     }
     public void Login()
     {
-        SignIn(emailLoginField.text, passwordLoginField.text, fader);
+        SignIn(emailLoginField.text, passwordLoginField.text);
     }
 
     public void Reset() {
@@ -82,7 +82,6 @@ public class AuthHandler : MonoBehaviour
                 var authResponse = deserialized as Dictionary<string, string>;
                 
                 DatabaseHandler.PostUser(user, authResponse["localId"], () => { }, authResponse["idToken"]);
-
                 SendEmailVerification(authResponse["idToken"]);
             });
 
@@ -106,7 +105,7 @@ public class AuthHandler : MonoBehaviour
     /// </summary>
     /// <param name="email"> User's email </param>
     /// <param name="password"> User's password </param>
-    public static void SignIn(string email, string password, SceneFader fader)
+    public static void SignIn(string email, string password)
     {
         var payLoad = $"{{\"email\":\"{email}\",\"password\":\"{password}\",\"returnSecureToken\":true}}";
         RestClient.Post($"https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key={apiKey}",
@@ -123,7 +122,7 @@ public class AuthHandler : MonoBehaviour
                 CheckEmailVerification(authResponse["idToken"], () =>
                 {
                     DatabaseHandler.GetUser(userId, user => { identificativo = userId; token = idToken; utente.level = user.level; utente.name = user.name; Debug.Log($"{user.name}, {user.level}"); }, idToken);
-                    fader.FadeTo("VeroMenu");
+                    SceneManager.LoadScene("VeroMenu");
                 }, () => { Debug.Log("Email not verified"); });
             });
     }

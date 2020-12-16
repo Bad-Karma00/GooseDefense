@@ -24,7 +24,7 @@ public class NodeUIScript : MonoBehaviour
         }
         else
         {
-            upgradeCost.text = "FATTO!";
+            upgradeCost.text = "DONE!";
             upgradeButton.interactable = false;
         }
         if (target.isUpgraded == false)

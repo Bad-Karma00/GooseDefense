@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MIGLIORA
+  m_Text: UPGRADE
 --- !u!222 &3886969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15934,7 +15934,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VENDI
+  m_Text: SELL
 --- !u!222 &1934014424
 CanvasRenderer:
   m_ObjectHideFlags: 0

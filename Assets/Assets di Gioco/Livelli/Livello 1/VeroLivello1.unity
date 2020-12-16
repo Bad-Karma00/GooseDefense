@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MIGLIORA
+  m_Text: UPGRADE
 --- !u!222 &3886969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11337,6 +11337,10 @@ MonoBehaviour:
     - {fileID: 4005486372472565644, guid: f6e68ac63125b764a8b537e57d47ee7e, type: 3}
     count: 5
     rate: 1
+  - enemy:
+    - {fileID: 1827817708107918912, guid: b9a24eeaf66e92c4aba40278aa284979, type: 3}
+    count: 5
+    rate: 1
   spawnPoint: {fileID: 678033514}
   timeBetweenWaves: 5
   livelloCorrente: 1
@@ -19567,7 +19571,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: VENDI
+  m_Text: SELL
 --- !u!222 &1934014424
 CanvasRenderer:
   m_ObjectHideFlags: 0
