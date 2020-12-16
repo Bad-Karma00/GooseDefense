@@ -653,7 +653,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 200$
+  m_Text: 300$
 --- !u!222 &54063163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7265,8 +7265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -408.31, y: 253.71}
-  m_SizeDelta: {x: 231.38916, y: 74.68627}
+  m_AnchoredPosition: {x: -414.19, y: 267.27}
+  m_SizeDelta: {x: 219.63629, y: 47.557724}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &755657539
 MonoBehaviour:
@@ -7317,10 +7317,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 4
+    m_MinSize: 0
     m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -10286,21 +10286,21 @@ MonoBehaviour:
     cost: 100
     upgradedPrefab: {fileID: 6302912739806512940, guid: c309c5d72a0a67448b22a857653d391b,
       type: 3}
-    upgradeCost: 150
+    upgradeCost: 250
   missleLauncher:
     prefab: {fileID: 3151987357852306354, guid: ecf7172e0cab47241aedd6b80f4d9ccc,
       type: 3}
-    cost: 250
+    cost: 350
     upgradedPrefab: {fileID: 5227606721989781563, guid: 76c71f8b466268c4b98918d2c8a167cb,
       type: 3}
-    upgradeCost: 350
+    upgradeCost: 650
   laserTurret:
     prefab: {fileID: 8531107603570074735, guid: cd27dbbfa802ac74ba6b0117befad86d,
       type: 3}
-    cost: 200
+    cost: 300
     upgradedPrefab: {fileID: 172229941030888640, guid: 46915f18fdb6fde48bd3c1eec8202506,
       type: 3}
-    upgradeCost: 750
+    upgradeCost: 800
 --- !u!114 &1021974915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11278,7 +11278,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29ef05e559fd0f4b948c6d8ac277f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 1000
+  startMoney: 9999
   startLives: 1
 --- !u!114 &1124995945
 MonoBehaviour:
@@ -11341,6 +11341,11 @@ MonoBehaviour:
     rate: 1
   - enemy:
     - {fileID: 1827817708107918912, guid: b9a24eeaf66e92c4aba40278aa284979, type: 3}
+    count: 5
+    rate: 1
+  - enemy:
+    - {fileID: 954374547366813569, guid: 23ace665700bc4440bfa967440a98f5c, type: 3}
+    - {fileID: 4005486372472565644, guid: f6e68ac63125b764a8b537e57d47ee7e, type: 3}
     count: 5
     rate: 1
   spawnPoint: {fileID: 678033514}
@@ -13166,8 +13171,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -408.31, y: 104.33}
-  m_SizeDelta: {x: 231.38916, y: 74.68627}
+  m_AnchoredPosition: {x: -340.72, y: 136.94}
+  m_SizeDelta: {x: 366.58008, y: 105.98986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1353483104
 MonoBehaviour:
@@ -13205,7 +13210,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -13216,7 +13221,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 19.22
+  m_Text: 'Next Wave in:
+
+    00.00'
 --- !u!222 &1353483106
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13689,7 +13696,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 250$
+  m_Text: 350$
 --- !u!222 &1378276499
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14358,8 +14365,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -408.31, y: 179.02}
-  m_SizeDelta: {x: 231.38916, y: 74.68627}
+  m_AnchoredPosition: {x: -383.48, y: 215.44}
+  m_SizeDelta: {x: 281.04407, y: 50.9936}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1510771956
 MonoBehaviour:
@@ -14410,7 +14417,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 5af538d867d6ef24d977efb82c071c15, type: 3}
-    m_FontSize: 50
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 4
@@ -14421,7 +14428,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 300$
+  m_Text: 'Money: 300$'
 --- !u!222 &1510771959
 CanvasRenderer:
   m_ObjectHideFlags: 0
