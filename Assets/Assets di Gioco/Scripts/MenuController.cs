@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MenuController : MonoBehaviour{
 
-    public GameObject buttonpanel, LevelSelectPanel;
+    public GameObject buttonpanel, LevelSelectPanel, TutorialPanel;
 
     private menuCameraMotion MenuCameraMotion;
 
@@ -13,10 +13,6 @@ public class MenuController : MonoBehaviour{
         MenuCameraMotion = Camera.main.GetComponent<menuCameraMotion>();
     }
 
-    void Update()
-    {
-        
-    }
     public void PlayGame()
     {
         MenuCameraMotion.switchPositionCamera(1);
@@ -29,5 +25,13 @@ public class MenuController : MonoBehaviour{
         MenuCameraMotion.switchPositionCamera(0);
         buttonpanel.SetActive(true);
         LevelSelectPanel.SetActive(false);
+        TutorialPanel.SetActive(false);
+    }
+
+    public void Tutorial()
+    {
+        MenuCameraMotion.switchPositionCamera(2);
+        buttonpanel.SetActive(false);
+        TutorialPanel.SetActive(true);
     }
 }
