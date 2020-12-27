@@ -6,6 +6,7 @@ public class menuCameraMotion : MonoBehaviour
 {
     public GameObject MainMenuPoint;
     public GameObject LevelSelectPoint;
+    public GameObject TutorialPoint;
 
     private List<GameObject> position = new List<GameObject>();
 
@@ -35,9 +36,13 @@ public class menuCameraMotion : MonoBehaviour
         {
             position.Add(MainMenuPoint);
         }
-        else
+        if(index == 1)
         {
             position.Add(LevelSelectPoint);
+        }
+        if(index == 2)
+        {
+            position.Add(TutorialPoint);
         }
     }
 }
