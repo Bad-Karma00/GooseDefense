@@ -1,6 +1,7 @@
 ﻿using UnityEngine.Audio;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MusicScript : MonoBehaviour
 {
@@ -63,5 +64,25 @@ public class MusicScript : MonoBehaviour
             return;
         }
         s.source.Play();
+    }
+
+    public void Mute(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            return;
+        }
+        s.source.mute = true;
+    }
+
+    public void UnMute(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            return;
+        }
+        s.source.mute = false;
     }
 }

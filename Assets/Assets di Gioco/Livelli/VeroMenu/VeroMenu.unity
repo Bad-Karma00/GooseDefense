@@ -10615,6 +10615,21 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3467523905477083236, guid: fc47a41f239a5694a8087fa2f139ae91,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3467523905477083236, guid: fc47a41f239a5694a8087fa2f139ae91,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3467523905477083236, guid: fc47a41f239a5694a8087fa2f139ae91,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc47a41f239a5694a8087fa2f139ae91, type: 3}
 --- !u!224 &1026126544 stripped
