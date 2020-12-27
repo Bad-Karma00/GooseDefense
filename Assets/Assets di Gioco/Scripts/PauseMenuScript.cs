@@ -18,13 +18,13 @@ public class PauseMenuScript : MonoBehaviour
         {
             Time.timeScale = 0f;
             FindObjectOfType<MusicScript>().Pause("MusicLevel");
-            FindObjectOfType<MusicScript>().Pause("LaserShoot");
+            FindObjectOfType<MusicScript>().Mute("LaserShoot");
         }
         else
         {
             Time.timeScale = 1f;
             FindObjectOfType<MusicScript>().Play("MusicLevel");
-            FindObjectOfType<MusicScript>().Play("LaserShoot");
+            FindObjectOfType<MusicScript>().UnMute("LaserShoot");
         }
     }
 
