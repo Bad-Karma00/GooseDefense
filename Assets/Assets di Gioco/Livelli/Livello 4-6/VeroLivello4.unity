@@ -13796,8 +13796,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c29ef05e559fd0f4b948c6d8ac277f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startMoney: 600
-  startLives: 1
+  startMoney: 650
+  startLives: 2
 --- !u!114 &1124995945
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13851,11 +13851,11 @@ MonoBehaviour:
   waves:
   - enemy:
     - {fileID: 4005486372472565644, guid: f6e68ac63125b764a8b537e57d47ee7e, type: 3}
-    count: 7
+    count: 5
     rate: 1.5
   - enemy:
     - {fileID: 954374547366813569, guid: 23ace665700bc4440bfa967440a98f5c, type: 3}
-    count: 6
+    count: 3
     rate: 1.5
   - enemy:
     - {fileID: 1827817708107918912, guid: b9a24eeaf66e92c4aba40278aa284979, type: 3}
@@ -13870,7 +13870,7 @@ MonoBehaviour:
     - {fileID: 4005486372472565644, guid: f6e68ac63125b764a8b537e57d47ee7e, type: 3}
     - {fileID: 954374547366813569, guid: 23ace665700bc4440bfa967440a98f5c, type: 3}
     - {fileID: 1827817708107918912, guid: b9a24eeaf66e92c4aba40278aa284979, type: 3}
-    count: 5
+    count: 2
     rate: 1
   spawnPoint: {fileID: 678033514}
   timeBetweenWaves: 5
@@ -16114,8 +16114,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.40625, y: 0.375}
-  m_SizeDelta: {x: 520.8125, y: 203.25}
+  m_AnchoredPosition: {x: -1.5999985, y: 0.375}
+  m_SizeDelta: {x: 802.3303, y: 203.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1325260706
 CanvasGroup:
@@ -21190,8 +21190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.5, y: -21.5}
-  m_SizeDelta: {x: 15, y: -43}
+  m_AnchoredPosition: {x: 1.3, y: -17}
+  m_SizeDelta: {x: 39.761185, y: -51.631737}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1831067800
 CanvasGroup:
